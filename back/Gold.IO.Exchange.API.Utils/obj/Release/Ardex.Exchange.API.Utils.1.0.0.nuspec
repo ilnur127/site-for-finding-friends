@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Ardex.Exchange.API.Utils</id>
+    <version>1.0.0</version>
+    <authors>Ardex.Exchange.API.Utils</authors>
+    <owners>Ardex.Exchange.API.Utils</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.2">
+        <dependency id="NBXplorer.Client" version="2.0.0.3" exclude="Build,Analyzers" />
+        <dependency id="Nethereum.Accounts" version="3.0.0" exclude="Build,Analyzers" />
+        <dependency id="Nethereum.Geth" version="3.0.0" exclude="Build,Analyzers" />
+        <dependency id="Nethereum.HdWallet" version="3.0.0" exclude="Build,Analyzers" />
+        <dependency id="Nethereum.Web3" version="3.0.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="12.0.1" exclude="Build,Analyzers" />
+        <dependency id="eos-sharp" version="2.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\root\Desktop\Projects\Ardex2\Gold.IO.Exchange.API.Utils\bin\Release\netcoreapp2.2\win-x64\Ardex.Exchange.API.Utils.dll" target="lib\netcoreapp2.2\Ardex.Exchange.API.Utils.dll" />
+  </files>
+</package>

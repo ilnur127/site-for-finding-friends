@@ -1,0 +1,485 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API\\Ardex.Exchange.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Domain\\Ardex.Exchange.API.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Domain\\Ardex.Exchange.API.Domain.csproj",
+        "projectName": "Ardex.Exchange.API.Domain",
+        "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Domain\\Ardex.Exchange.API.Domain.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Services\\Ardex.Exchange.API.BusinessLogic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Services\\Ardex.Exchange.API.BusinessLogic.csproj",
+        "projectName": "Ardex.Exchange.API.BusinessLogic",
+        "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Services\\Ardex.Exchange.API.BusinessLogic.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Domain\\Ardex.Exchange.API.Domain.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Domain\\Ardex.Exchange.API.Domain.csproj"
+              },
+              "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Storage\\Ardex.Exchange.API.Storage.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Storage\\Ardex.Exchange.API.Storage.csproj"
+              },
+              "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Utils\\Ardex.Exchange.API.Utils.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Utils\\Ardex.Exchange.API.Utils.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "NBitcoin": {
+              "target": "Package",
+              "version": "[4.1.1.81, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Storage\\Ardex.Exchange.API.Storage.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Storage\\Ardex.Exchange.API.Storage.csproj",
+        "projectName": "Ardex.Exchange.API.Storage",
+        "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Storage\\Ardex.Exchange.API.Storage.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Storage\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Domain\\Ardex.Exchange.API.Domain.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Domain\\Ardex.Exchange.API.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "FluentMigrator": {
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "FluentMigrator.Console": {
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "FluentMigrator.Runner": {
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "FluentNHibernate": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.13, )"
+            },
+            "NHibernate": {
+              "target": "Package",
+              "version": "[5.2.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[11.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Utils\\Ardex.Exchange.API.Utils.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Utils\\Ardex.Exchange.API.Utils.csproj",
+        "projectName": "Ardex.Exchange.API.Utils",
+        "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Utils\\Ardex.Exchange.API.Utils.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Utils\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "NBXplorer.Client": {
+              "target": "Package",
+              "version": "[2.0.0.3, )"
+            },
+            "Nethereum.Accounts": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Nethereum.Geth": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Nethereum.HdWallet": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Nethereum.Web3": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "eos-sharp": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API\\Ardex.Exchange.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API\\Ardex.Exchange.API.csproj",
+        "projectName": "Ardex.Exchange.API",
+        "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API\\Ardex.Exchange.API.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Domain\\Ardex.Exchange.API.Domain.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Domain\\Ardex.Exchange.API.Domain.csproj"
+              },
+              "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Services\\Ardex.Exchange.API.BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Services\\Ardex.Exchange.API.BusinessLogic.csproj"
+              },
+              "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Utils\\Ardex.Exchange.API.Utils.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Gold.IO.Exchange.API.Utils\\Ardex.Exchange.API.Utils.csproj"
+              },
+              "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Info.Blockchain.API\\Info.Blockchain.API.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Info.Blockchain.API\\Info.Blockchain.API.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Binance.Net": {
+              "target": "Package",
+              "version": "[4.0.6, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NBXplorer.Client": {
+              "target": "Package",
+              "version": "[2.0.0.3, )"
+            },
+            "NBitcoin": {
+              "target": "Package",
+              "version": "[4.1.1.81, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "eos-sharp": {
+              "target": "Package",
+              "version": "[2.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Info.Blockchain.API\\Info.Blockchain.API.csproj": {
+      "version": "4.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Info.Blockchain.API\\Info.Blockchain.API.csproj",
+        "projectName": "BlockchainAPI",
+        "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Info.Blockchain.API\\Info.Blockchain.API.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Documents\\GitHub\\Ardex\\Info.Blockchain.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp1.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp1.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp1.1": {
+          "dependencies": {
+            "CompareNETObjects": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[1.1.2, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

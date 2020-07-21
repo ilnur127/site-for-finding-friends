@@ -1,0 +1,12 @@
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Storage\bin\Release\netcoreapp2.2\Gold.IO.Exchange.API.Storage.deps.json
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Storage\bin\Release\netcoreapp2.2\Gold.IO.Exchange.API.Storage.dll
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Storage\bin\Release\netcoreapp2.2\Gold.IO.Exchange.API.Storage.pdb
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Storage\bin\Release\netcoreapp2.2\Gold.IO.Exchange.API.Domain.dll
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Storage\bin\Release\netcoreapp2.2\Gold.IO.Exchange.API.Domain.pdb
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Storage\obj\Release\netcoreapp2.2\Gold.IO.Exchange.API.Storage.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Storage\obj\Release\netcoreapp2.2\Gold.IO.Exchange.API.Storage.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Storage\obj\Release\netcoreapp2.2\Gold.IO.Exchange.API.Storage.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Storage\obj\Release\netcoreapp2.2\Gold.IO.Exchange.API.Storage.AssemblyInfo.cs
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Storage\obj\Release\netcoreapp2.2\Gold.IO.Exchange.API.Storage.csproj.CopyComplete
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Storage\obj\Release\netcoreapp2.2\Gold.IO.Exchange.API.Storage.dll
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Storage\obj\Release\netcoreapp2.2\Gold.IO.Exchange.API.Storage.pdb

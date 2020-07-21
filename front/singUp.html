@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Регистрация</title>
+</head>
+
+<body>
+    <div class="container">
+        <img class="singUp_back" src="img/стрелка.png">
+        <form class="needs-validation" novalidate>
+            <div id="yourInfo">
+                <div class="form-group">
+                    <label for="validationCustom03">Логин</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Логин" required>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите ваш логин.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="validationCustom03">Пароль</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Пароль" required>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите пароль.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="validationCustom03">Имя</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Имя" required>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите ваше имя.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="validationCustom03">Фамилия</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Фамилия" required>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите вашу фамилию.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="validationCustom03">Город</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Город" required>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите ваш город.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="validationCustom03">Возраст</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Возраст" required>
+                    <div class="invalid-feedback">
+                        Пожалуйста, введите ваш возраст.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group ">
+                <label for="validationCustom03">Что вам интересно?</label>
+                <div id="YourInterests">
+                    <div class="custom-control custom-checkbox custom-control-inline yourInterestsCheckBox">
+                        <input type="checkbox" class="custom-control-input" name="yourInterests" id="yourCheck1" value="Fishing">
+                        <label class="custom-control-label" for="yourCheck1">рыбалка</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline yourInterestsCheckBox">
+                        <input type="checkbox" class="custom-control-input" name="yourInterests" id="yourCheck2" value="Sport">
+                        <label class="custom-control-label" for="yourCheck2">спорт</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline yourInterestsCheckBox">
+                        <input type="checkbox" class="custom-control-input" name="yourInterests" id="yourCheck3" value="MakeUp">
+                        <label class="custom-control-label" for="yourCheck3">make-up</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline yourInterestsCheckBox">
+                        <input type="checkbox" class="custom-control-input" name="yourInterests" id="yourCheck4" value="Travel">
+                        <label class="custom-control-label" for="yourCheck4">путешествия</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline yourInterestsCheckBox">
+                        <input type="checkbox" class="custom-control-input" name="yourInterests" id="yourCheck5" value="Manicure">
+                        <label class="custom-control-label" for="yourCheck5">маникюр</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline yourInterestsCheckBox">
+                        <input type="checkbox" class="custom-control-input" name="yourInterests" id="yourCheck6" value="Cinema">
+                        <label class="custom-control-label" for="yourCheck6">кино</label>
+                    </div>
+                </div>
+            </div>
+            <div id="fail"></div>
+            <button class="btn btn-outline-success" type="button" id="btn-reg">Зарегистрироваться</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js " integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="js/reg.js"></script>
+    <script>
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+
+</html>

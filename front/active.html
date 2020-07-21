@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Личный кабинет(актив)</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <img src="img/logo.png">
+        <form class="form-inline">
+            <span class="color-W">
+                <span class="lk"><img src="img/Аккаунт.png">Мой кабинет</span>
+            <span class="exit"><img src="img/Выход.png">Выход</span>
+            </span>
+            <span data-toggle="modal" data-target="#modalHelp"><img src="img/Помощь.png">Помощь</span>
+            <span data-toggle="modal" data-target="#modalSettings"><img src="img/Настройки.png">Настройки</span>
+            </span>
+        </form>
+    </nav>
+    <div class="modal fade" id="modalChangeUzer" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Сменить аккаунт</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body change_uzer_body">
+                    <center><img src=""></center>
+                    <div>Войти как <span></span></div>
+                    <input type="password">
+                    <button>Войти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content ">
+                <div class="modal-header history_header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                    <button type="button" class="close closeHistory" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body history_body">
+                    <div class="bd-example">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <ol class="carousel-indicators carouselHistoryOl"></ol>
+                            <div class="carousel-inner carouselHistoryInner"></div>
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_SP" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title " id="exampleModalLongTitle">Запланированный постинг</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body SP_body">
+                    <form name="modalSP">
+                        <div class="form-group">
+                            <label>Ваша дата</label>
+                            <input type="date" name="calendar" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label>Ваше время</label>
+                            <input type="time" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea">Ваш текст</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea " rows="3" disabled></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary">Показать файлы</button>
+                            <div class="files_show"><input type="file" accept="image/*,video/*" multiple="multiple" /></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer account_footer">
+                    <button type="button " class="btn btn-primary sp_edit">Редактировать</button>
+                    <button type="button " class="btn btn-primary sp_submit_new">Отправить</button>
+                    <div id="messageSPedit"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="modalUzer" tabindex="-1 " role="dialog " aria-labelledby="exampleModalCenterTitle " aria-hidden="true ">
+        <div class="modal-dialog modal-dialog-centered " role="document ">
+            <div class="modal-content">
+                <div class="modal-header uzer_header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                    <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                    <span aria-hidden="true ">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body uzer_body">
+                    <div class="row">
+                        <div class="col-4">ФИО</div>
+                        <div class="col-8" id="uzer_fio"></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-4">Город</div>
+                        <div class="col-8" id="uzer_city"></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-4">Возраст</div>
+                        <div class="col-8" id="uzer_age"></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-4">Интересы</div>
+                        <div class="col-8" id="user_interests">
+                            <div class="custom-control custom-checkbox custom-control-inline yourInterestsCheckBox">
+                                <input type="checkbox" class="custom-control-input" name="yourInterests" id="yourCheck1" value="fishing" disabled>
+                                <label class="custom-control-label" for="yourCheck1">рыбалка</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline yourInterestsCheckBox">
+                                <input type="checkbox" class="custom-control-input" name="yourInterests" id="yourCheck2" value="sport" disabled>
+                                <label class="custom-control-label" for="yourCheck2">спорт</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline yourInterestsCheckBox">
+                                <input type="checkbox" class="custom-control-input" name="yourInterests" id="yourCheck3" value="makeUp" disabled>
+                                <label class="custom-control-label" for="yourCheck3">make-up</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline yourInterestsCheckBox">
+                                <input type="checkbox" class="custom-control-input" name="yourInterests" id="yourCheck4" value="travel" disabled>
+                                <label class="custom-control-label" for="yourCheck4">путешествия</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline yourInterestsCheckBox">
+                                <input type="checkbox" class="custom-control-input" name="yourInterests" id="yourCheck5" value="manicure" disabled>
+                                <label class="custom-control-label" for="yourCheck5">маникюр</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline yourInterestsCheckBox">
+                                <input type="checkbox" class="custom-control-input" name="yourInterests" id="yourCheck6" value="cinema" disabled>
+                                <label class="custom-control-label" for="yourCheck6">кино</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-4">Процент совпадения</div>
+                        <div class="col-8" id="uzer_proc"></div>
+                    </div>
+                </div>
+                <div class=" modal-footer uzer_footer ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="modalHelp " tabindex="-1 " role="dialog " aria-labelledby="exampleModalCenterTitle " aria-hidden="true ">
+        <div class="modal-dialog modal-dialog-centered " role="document ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="exampleModalLongTitle ">Помощь</h5>
+                    <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                        <span aria-hidden="true ">&times;</span>
+                      </button>
+                </div>
+                <div class="modal-body ">
+                    ...
+                </div>
+                <div class="modal-footer ">
+                    <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+                    <button type="button " class="btn btn-primary ">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="modalSettings " tabindex="-1 " role="dialog " aria-labelledby="exampleModalCenterTitle " aria-hidden="true ">
+        <div class="modal-dialog modal-dialog-centered " role="document ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="exampleModalLongTitle ">Настройки</h5>
+                    <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                            <span aria-hidden="true ">&times;</span>
+                          </button>
+                </div>
+                <div class="modal-body ">
+                    ...
+                </div>
+                <div class="modal-footer ">
+                    <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+                    <button type="button " class="btn btn-primary ">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main ">
+        <div class="row ">
+            <div class="col-3 ">
+                <div class="ac_blocks ">
+                    <h3>Аккаунт</h3>
+                    <div class="block rounded uzer ">
+                        <div class="row ">
+                            <div class="col-3 "><img src=" "></div>
+                            <div class="col-3 ">
+                                <div>
+                                    <center><strong>???</strong></center>
+                                </div>
+                                <div>Публикации</div>
+                            </div>
+                            <div class="col-3 ">
+                                <div>
+                                    <center><strong>???</strong></center>
+                                </div>
+                                <div>Подписчики</div>
+                            </div>
+                            <div class="col-3 ">
+                                <div>
+                                    <center><strong>???</strong></center>
+                                </div>
+                                <div>Подписки</div>
+                            </div>
+                        </div>
+                        <strong></strong>
+                        <div id="uzerName"></div>
+                        <div class="row ">
+                            <div class="col-6 ">
+                                <div>
+                                    <center><strong>Подписались</strong></center>
+                                </div>
+                                <div>
+                                    <center>???</center>
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div>
+                                    <center><strong>Отписались</strong></center>
+                                </div>
+                                <div>
+                                    <center>???</center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ac_blocks SP ">
+                    <h3>Запланированный постинг</h3>
+                    <div class="block rounded "></div>
+                </div>
+                <div class="ac_blocks ">
+                    <h3 data-toggle="modal " data-target="#modalPublication ">Автоматический лайкинг</h3>
+                    <div class="block rounded ">
+                        <div class="custom-control custom-switch ">
+                            <input type="checkbox " class="custom-control-input " id="autoLike ">
+                            <label class="custom-control-label " for="autoLike ">Включить</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 main_news ">
+                <div class="ac_blocks ">
+                    <h3>Нужно лайкнуть</h3>
+                    <div class="block rounded ">
+                        <div id="history">
+                            <div class="history_child ">
+                                <div class="hist hist_active " style="background-color: gray "></div>
+                                <div class="history_autor "></div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="news">
+                            <div class="news_block"><span><img src="img/1486395884-account_80606.png "></span><span class="news_author ">garikkharlamov</span>
+                                <div>
+                                    <center><img class="news_image " src=" " alt=" "></center>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-1 like_block ">
+                                        <img class="like_not " src="img/like_not.png ">
+                                        <img class="like " src="img/like.png "></div>
+                                    <div class="col-4 comment_block ">
+                                        <img class="closeComentBlock " src="img/comment.png " id="сollapseСommentary ">
+                                        <div class="collapse multi-collapse сollapseСommentary ">
+                                            <div class="card card-body ">
+                                                <input type="text " class="news_commentary " placeholder="Напишите комментарий "><button type="button " class="btn btn-primary send_commentary ">Отправить комментарий</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="col "></div>
+                                    <div class="col-1 bMark_block ">
+                                        <img class="bMark_not " src="img/bookmark.png ">
+                                        <img class="bMark " src="img/bookmark-checck.png "></div>
+                                </div>
+                                <div class="underPhoto ">Ya garik</div>
+                                <div class="comment "></div>
+                            </div>
+                            <hr>
+                            <div class="news_block"><span><img src="img/1486395884-account_80606.png "></span><span class="news_author ">samoylovaoxana\nBuckingham Palace</span>
+                                <div>
+                                    <center><img class="news_image " src=" " alt=" "></center>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-1 like_block ">
+                                        <img class="like_not " src="img/like_not.png ">
+                                        <img class="like " src="img/like.png "></div>
+                                    <div class="col-4 comment_block ">
+                                        <img class="closeComentBlock " src="img/comment.png " id="сollapseСommentary ">
+                                        <div class="collapse multi-collapse сollapseСommentary ">
+                                            <div class="card card-body ">
+                                                <input type="text " class="news_commentary " placeholder="Напишите комментарий "><button type="button " class="btn btn-primary send_commentary ">Отправить комментарий</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="col "></div>
+                                    <div class="col-1 bMark_block ">
+                                        <img class="bMark_not " src="img/bookmark.png ">
+                                        <img class="bMark " src="img/bookmark-checck.png "></div>
+                                </div>
+                                <div class="underPhoto "></div>
+                                <div class="comment "></div>
+                            </div>
+                            <hr>
+                            <div class="news_block"><span><img src="img/1486395884-account_80606.png "></span><span class="news_author ">garikkharlamov</span>
+                                <div>
+                                    <center><img class="news_image " src=" " alt=" "></center>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-1 like_block ">
+                                        <img class="like_not " src="img/like_not.png ">
+                                        <img class="like " src="img/like.png "></div>
+                                    <div class="col-4 comment_block ">
+                                        <img class="closeComentBlock " src="img/comment.png " id="сollapseСommentary ">
+                                        <div class="collapse multi-collapse сollapseСommentary ">
+                                            <div class="card card-body ">
+                                                <input type="text " class="news_commentary " placeholder="Напишите комментарий "><button type="button " class="btn btn-primary send_commentary ">Отправить комментарий</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="col "></div>
+                                    <div class="col-1 bMark_block ">
+                                        <img class="bMark_not " src="img/bookmark.png ">
+                                        <img class="bMark " src="img/bookmark-checck.png "></div>
+                                </div>
+                                <div class="underPhoto "></div>
+                                <div class="comment ">Ya garik2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 main_news ">
+                <div class="ac_blocks ">
+                    <h3>Нужно подписаться</h3>
+                    <div class="block rounded ">
+                        <div id="interestingUzers ">
+                            <div>Интересные Пользователи</div>
+                            <div id="fail"></div>
+                            <div class="interestingUsers_block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col main_sp">
+                <img class="main_sp_back" src="img/стрелка.png">
+                <h3>Запланированный постинг</h3>
+                <div class="block rounded">
+                    <form name="SP">
+                        <div class="form-group">
+                            <label>Выберете удобную дату</label>
+                            <input type="date" id="datepicker">
+                        </div>
+                        <div class="form-group">
+                            <label>Выберете удобное время</label>
+                            <input type="time" id="timepicker">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea">Напишите текст</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="myfile" class="chous">Выберите файлы</label>
+                            <input type="file" id="myfile" name="myfile" accept="image/*,video/*" multiple="multiple" onchange="handleFiles(this.files)" />
+                            <div id="fileList">
+                                <p>Ничего</p>
+                            </div>
+                        </div>
+                        <button type="button" class="SP_submit">Отправить</button>
+                        <div id="messageSP"></div>
+                    </form>
+                </div>
+            </div>
+            <div class="col main_lk">
+                <img class="main_lk_back" src="img/стрелка.png">
+                <h3>Личный кабинет</h3>
+                <div class="block rounded">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="true">Профиль</a>
+                            <a class="nav-item nav-link" id="nav-sp-tab" data-toggle="tab" href="#nav-sp" role="tab" aria-controls="nav-sp" aria-selected="false">Запланированный постинг</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <form name="lKProfile">
+                                <button class="btn btn-primary lk_edit" type="button">Редактировать</button><button class="btn btn-primary lk_submit_new" type="button">Отправить</button>
+                                <div class="form-group">
+                                    <div><strong>Контактная информация</strong></div>
+                                    <div id="messageLkInfo"></div>
+                                    <div id="lkYourInfo">
+                                        <div class="form-group">
+                                            <label for="validationCustom01">Город</label>
+                                            <input type="text" class="form-control" id="validationCustom01" placeholder="Город" required disabled>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="validationCustom02">Возраст</label>
+                                            <input type="text" class="form-control" id="validationCustom02" placeholder="Возраст" required disabled>
+                                        </div>
+                                        <div><strong>Ваши интересы</strong></div>
+                                        <div id="lkYourInterests">
+                                            <div class="custom-control custom-checkbox custom-control-inline yourInterestsCheckBox">
+                                                <input type="checkbox" class="custom-control-input" name="yourInterests" id="yourCheck1" value="fishing" disabled>
+                                                <label class="custom-control-label" for="yourCheck1">рыбалка</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox custom-control-inline yourInterestsCheckBox">
+                                                <input type="checkbox" class="custom-control-input" name="yourInterests" id="yourCheck2" value="sport" disabled>
+                                                <label class="custom-control-label" for="yourCheck2">спорт</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox custom-control-inline yourInterestsCheckBox">
+                                                <input type="checkbox" class="custom-control-input" name="yourInterests" id="yourCheck3" value="makeUp" disabled>
+                                                <label class="custom-control-label" for="yourCheck3">make-up</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox custom-control-inline yourInterestsCheckBox">
+                                                <input type="checkbox" class="custom-control-input" name="yourInterests" id="yourCheck4" value="travel" disabled>
+                                                <label class="custom-control-label" for="yourCheck4">путешествия</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox custom-control-inline yourInterestsCheckBox">
+                                                <input type="checkbox" class="custom-control-input" name="yourInterests" id="yourCheck5" value="manicure" disabled>
+                                                <label class="custom-control-label" for="yourCheck5">маникюр</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox custom-control-inline yourInterestsCheckBox">
+                                                <input type="checkbox" class="custom-control-input" name="yourInterests" id="yourCheck6" value="cinema" disabled>
+                                                <label class="custom-control-label" for="yourCheck6">кино</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="nav-sp" role="tabpanel" aria-labelledby="nav-sp-tab">
+                            <div>
+                                <div class="lk_sp">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js " integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js "></script>
+    <script src="js/app.js "></script>
+</body>
+
+</html>

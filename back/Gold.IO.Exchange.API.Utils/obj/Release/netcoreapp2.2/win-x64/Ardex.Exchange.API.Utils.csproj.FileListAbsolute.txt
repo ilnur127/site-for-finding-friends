@@ -1,0 +1,7 @@
+C:\Users\root\Desktop\Projects\Ardex2\Gold.IO.Exchange.API.Utils\bin\Release\netcoreapp2.2\win-x64\Ardex.Exchange.API.Utils.deps.json
+C:\Users\root\Desktop\Projects\Ardex2\Gold.IO.Exchange.API.Utils\bin\Release\netcoreapp2.2\win-x64\Ardex.Exchange.API.Utils.dll
+C:\Users\root\Desktop\Projects\Ardex2\Gold.IO.Exchange.API.Utils\bin\Release\netcoreapp2.2\win-x64\Ardex.Exchange.API.Utils.pdb
+C:\Users\root\Desktop\Projects\Ardex2\Gold.IO.Exchange.API.Utils\obj\Release\netcoreapp2.2\win-x64\Ardex.Exchange.API.Utils.AssemblyInfoInputs.cache
+C:\Users\root\Desktop\Projects\Ardex2\Gold.IO.Exchange.API.Utils\obj\Release\netcoreapp2.2\win-x64\Ardex.Exchange.API.Utils.AssemblyInfo.cs
+C:\Users\root\Desktop\Projects\Ardex2\Gold.IO.Exchange.API.Utils\obj\Release\netcoreapp2.2\win-x64\Ardex.Exchange.API.Utils.dll
+C:\Users\root\Desktop\Projects\Ardex2\Gold.IO.Exchange.API.Utils\obj\Release\netcoreapp2.2\win-x64\Ardex.Exchange.API.Utils.pdb

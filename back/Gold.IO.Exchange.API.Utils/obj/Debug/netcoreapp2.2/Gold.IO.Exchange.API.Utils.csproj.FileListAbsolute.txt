@@ -1,0 +1,9 @@
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Utils\bin\Debug\netcoreapp2.2\Gold.IO.Exchange.API.Utils.deps.json
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Utils\bin\Debug\netcoreapp2.2\Gold.IO.Exchange.API.Utils.dll
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Utils\bin\Debug\netcoreapp2.2\Gold.IO.Exchange.API.Utils.pdb
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Utils\obj\Debug\netcoreapp2.2\Gold.IO.Exchange.API.Utils.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Utils\obj\Debug\netcoreapp2.2\Gold.IO.Exchange.API.Utils.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Utils\obj\Debug\netcoreapp2.2\Gold.IO.Exchange.API.Utils.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Utils\obj\Debug\netcoreapp2.2\Gold.IO.Exchange.API.Utils.AssemblyInfo.cs
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Utils\obj\Debug\netcoreapp2.2\Gold.IO.Exchange.API.Utils.dll
+C:\Users\Administrator\Documents\GitHub\gold-io-exchange-api\Gold.IO.Exchange.API\Gold.IO.Exchange.API.Utils\obj\Debug\netcoreapp2.2\Gold.IO.Exchange.API.Utils.pdb
